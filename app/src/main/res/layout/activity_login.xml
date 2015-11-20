@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="1"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imageViewJudul"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/image_logo_vpos"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/app_name" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUserName"
+            android:inputType="text"
+            android:orientation="horizontal"
+            android:hint="User ID"
+            android:layout_marginBottom="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            android:inputType="textPassword"
+            android:orientation="horizontal"
+            android:layout_below="@id/txtUserName"
+            android:hint="Password"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayout1"
+            android:text="Login"
+            android:background="@drawable/windows_style_indigo"
+            android:layout_marginBottom="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_cancel"
+            android:orientation="horizontal"
+            android:layout_below="@id/button_login"
+            android:text="Cancel"
+            android:background="@drawable/windows_style_deeporange"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/app_developer"
+            android:id="@+id/textView"
+            android:singleLine="false"
+            android:phoneNumber="false"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textStyle="italic"
+            android:gravity="bottom|right"
+            android:layout_gravity="bottom|right"
+            android:paddingRight="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageViewInformasi"
+            android:src="@mipmap/icon_info"
+            android:contentDescription="@string/app_developer"
+            android:layout_gravity="bottom"
+            android:background="@drawable/windows_style_picture" />
+    </GridLayout>
+
+</LinearLayout>

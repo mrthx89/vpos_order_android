@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewNamaUser"
+        android:textAlignment="center"
+        android:inputType="none"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="34sp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffffff"
+        android:text="@string/app_name" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="0.15"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonProduk"
+                android:background="@drawable/windows_style_green"
+                android:contentDescription="Produk"
+                android:text="Produk"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="0.15"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonOrder"
+                android:background="@drawable/windows_style_yellow"
+                android:contentDescription="Daftar Transaksi"
+                android:backgroundTintMode="multiply"
+                android:text="Sales Order" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="0.15"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonExit"
+                android:background="@drawable/windows_style_red"
+                android:contentDescription="Exit"
+                android:text="Exit"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/app_developer"
+            android:id="@+id/textView"
+            android:singleLine="false"
+            android:phoneNumber="false"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textStyle="italic"
+            android:gravity="bottom|right"
+            android:layout_gravity="bottom|right"
+            android:paddingRight="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageViewInformasi"
+            android:src="@mipmap/icon_info"
+            android:contentDescription="@string/app_developer"
+            android:layout_gravity="bottom"
+            android:background="@drawable/windows_style_picture" />
+    </GridLayout>
+
+</LinearLayout>

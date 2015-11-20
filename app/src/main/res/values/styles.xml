@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material" >
+        <item name="android:colorPrimary">@color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@color/accent_material_dark</item>
+        <item name="android:colorButtonNormal">@color/button_material_light</item>
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarWidgetTheme">@style/ActionBarWidget</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <color name="custom_theme_color">#1A237E</color>
+    <style name="ActionBarWidget" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:icon">@mipmap/ic_launcher</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="ActionBar" parent="android:Theme.Material">
+        <item name="android:background">@color/accent_material_light</item>
+        <item name="android:icon">@mipmap/ic_launcher</item>
+    </style>
+</resources>

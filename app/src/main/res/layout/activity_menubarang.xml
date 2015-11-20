@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonBack"
+            android:textAlignment="center"
+            android:src="@mipmap/icon_back"
+            android:contentDescription="@string/app_developer"
+            android:background="@drawable/windows_style_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Item Produk"
+            android:inputType="none"
+            android:textSize="24sp"
+            android:textColor="#ffffffff"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:touchscreenBlocksFocus="false"
+        android:transitionGroup="false">
+
+        <SearchView
+            android:id="@+id/txtCari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:queryHint="Quick Search"
+            android:layout_marginBottom="5dp" />
+
+        <ListView
+            android:id="@+id/lvDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:smoothScrollbar="true"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

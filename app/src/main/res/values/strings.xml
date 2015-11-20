@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VPOS Mobile ver 1.0</string>
+    <string name="app_developer">VPoint Developer @ 2015</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="list_items">
+        <item>iPhone 6||845$</item>
+        <item>iPad Air||800$</item>
+        <item>iPad Mini 2||500$</item>
+        <item>Galaxy Note 4||740$</item>
+        <item>Galaxy Alpha||599$</item>
+        <item>Galaxy Golden||95$</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@android:style/Theme.DeviceDefault"
+    android:padding="15dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editText"
+        android:hint="Example : http://localhost/api/vpos/"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save Url"
+        android:id="@+id/saveGo"
+        android:background="@drawable/windows_style_indigo"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:id="@+id/UrlSetCancel"
+        android:background="@drawable/windows_style_brown" />
+</LinearLayout>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonBack"
+            android:textAlignment="center"
+            android:src="@mipmap/icon_back"
+            android:contentDescription="@string/app_developer"
+            android:background="@drawable/windows_style_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Menu"
+            android:inputType="none"
+            android:textSize="24sp"
+            android:textColor="#ffffffff"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <GridLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout2"
+        android:paddingBottom="5dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pelayan : (none)"
+            android:id="@+id/txtSalesman"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textColor="#ffffffff"
+            android:gravity="left"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tanggal : 25 Mei 2015"
+            android:id="@+id/txtTanggal"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:textColor="#ffffffff"
+            android:textAlignment="textEnd"
+            android:gravity="right"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Meja : (none)"
+            android:id="@+id/txtMeja"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textColor="#ffffffff"
+            android:gravity="left"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pengunjung : 0"
+            android:id="@+id/txtPengunjung"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:textColor="#ffffffff"
+            android:gravity="right"
+            android:clickable="true"
+            android:layout_gravity="right" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:touchscreenBlocksFocus="false"
+        android:transitionGroup="false">
+
+        <ListView
+            android:id="@+id/lvDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:smoothScrollbar="true"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="120sp"
+            android:layout_height="50dp"
+            android:text="Cancel Order"
+            android:background="@drawable/windows_style_red"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+        <Button
+            android:id="@+id/button_baru"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Menu"
+            android:background="@drawable/windows_style_indigo"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp" />
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Order"
+            android:background="@drawable/windows_style_green"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+    </LinearLayout>
+
+</LinearLayout>

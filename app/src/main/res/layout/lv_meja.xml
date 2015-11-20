@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtNamaMeja"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Nama Meja"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:inputType="none"
+        android:gravity="center"
+        android:background="@drawable/windows_style_green" />
+
+    <TextView
+        android:id="@+id/txtNoID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:inputType="none"
+        android:gravity="center"
+        android:layout_alignParentTop="false"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
